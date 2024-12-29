@@ -27,8 +27,8 @@ ul {
 }
 
 a {
-text-decoration: none;
-color: whitesmoke;
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .header_flex {
@@ -56,47 +56,150 @@ footer {
 }
 
 .presentacion {
-padding: 4% 15%;
-background-color: cornflowerblue;
-text-align: center;
+    font-family: Oswald, Verdana, Tahoma, sans-serif;
+    padding: 4% 15%;
+    background-color: cornflowerblue;
+    text-align: center;
 }
 
 textarea {
     font-family: Oswald, Verdana, Tahoma, sans-serif;
 }
 
-.form_container {
-text-align: center;
+.contact-map-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #1c8ebb;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+.form_container, .map_container {
+    width: 100%;
+    max-width: 800px;
+}
+
+
+/* Labels */
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Input fields */
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 2px solid #16a085; /* Bordes con color */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #3d7a8a; /* Fondo oscuro */
+    color: white;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+/* Cambia el borde al hacer focus */
+.form-input:focus, .form-textarea:focus {
+    border-color: #1abc9c;
+    outline: none; /* Quitar el contorno azul por defecto */
+}
+
+/* Button */
+.form-button {
+    background-color: gold; /* dorado */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover */
+.form-button:hover {
+    background-color: #16b452; /* Cambia el tono de verde */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+/* Efecto de clic */
+.form-button:active {
+    background-color: #0e6655;
+    transform: scale(0.95); /* Reduce ligeramente el tamaño */
+}
+
+/* Transición general para elementos interactivos */
+button, a, input, textarea {
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en enlaces */
+a:hover {
+    color: gold;
+}
+
+/* Efecto hover en botones */
+button:hover {
+    background-color: #1abc35;
+    transform: scale(1.05);
+}
+
+/* Suavizado del hover en la sección del contacto */
+.form_container:hover, .map_container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+
 .tradingview-widget-container {
+    font-size: clamp(1rem, 3vw, 2rem);
     text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     }
+    
 
 .frases_cont h2 {
     text-align: center;
 }
 
-.grid_comentarios {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 1rem;
-    grid-template-areas:
-    'item1 item1 item1'
-    'item2 item3 item4  '
-    'item2 item5 item5  ';
-
-    background-color: #e8eee7e3; /* Color de fondo frases*/
-    padding: 20px; 
-    border-radius: 10px; 
-}
-
 .grid_comentarios > div {
-    border: 1px solid blue;
-    padding: 5%;
-    
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
 }
+
+.grid_comentarios > div:hover {
+    transform: scale(1.05);
+    background-color: #f7f7f7;
+}
+.grid_comentarios > div {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.grid_comentarios > div:hover {
+    transform: scale(1.05);
+    background-color: #f7f7f7;
+}
+
 
 .item1 {
     grid-area: item1;
@@ -117,6 +220,21 @@ text-align: center;
 .item5 {
     grid-area: item5;
 }
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+footer .social-links a:hover {
+    transform: scale(1.2);
+}
+
 
 /* Medias Queries */ 
 
