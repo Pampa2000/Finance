@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finanzas para todos</title>
-    <link rel="icon" type="imag/icon" href="/img/icon.jpg">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="imagenes/icon" href="/imagenes/icon.jpg">
+    <link rel="stylesheet" href="css/Finanzas.css">
 </head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <body>
@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="img/logo_fn.jpg" alt="Logo de la web"
+            <img src="imagenes/logo_fn.jpg" alt="Logo de la web"
             width="175" height="150">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,6 +29,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Frases">Frases motivacionales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carrito.html">Carrito de Criptomonedas</a>
               </li>       
             </ul>
           </div>
@@ -45,8 +48,10 @@
         <div>
         El mejor sitio web para ingresar al mundo de las finanzas
         </div>
-        
-        "Educación financiera para que te cierren los números"
+        <b>
+          "Educación financiera para que te cierren los números"
+        </b>
+                
     </section>
     <section id="Cotizaciones">
         <div class="tradingview-widget-container">
@@ -73,64 +78,49 @@
         </div>
     </section>
     <section>
-        <div class="tradingview-widget-container">
-            <h2>BTC ETH SPY</h2>
+        <div>
             <!-- TradingView Widget BEGIN -->
-        <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
-            <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Siga los mercados en nuestra web</span></a></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
-            {
-            "symbols": [
-            [
-                "BINANCE:BTCUSD|1D"
-            ],
-            [
-                "COINBASE:ETHUSD|1D"
-            ],
-            [
-                "AMEX:SPY|1D"
-            ]
-            ],
-            "chartOnly": false,
-            "width": "auto",
-            "height": "50%",
-            "locale": "es",
-            "colorTheme": "light",
-            "autosize": false,
-            "showVolume": false,
-            "showMA": false,
-            "hideDateRanges": false,
-            "hideMarketStatus": false,
-            "hideSymbolLogo": false,
-            "scalePosition": "right",
-            "scaleMode": "Normal",
-            "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
-            "fontSize": "10",
-            "noTimeScale": false,
-            "valuesTracking": "1",
-            "changeMode": "price-and-percent",
-            "chartType": "area",
-            "maLineColor": "#2962FF",
-            "maLineWidth": 1,
-            "maLength": 9,
-            "headerFontSize": "medium",
-            "lineWidth": 2,
-            "lineType": 0,
-            "dateRanges": [
-            "1d|1",
-            "1m|30",
-            "3m|60",
-            "12m|1D",
-            "60m|1W",
-            "all|1M"
-            ]
-            }
-            </script>
-            </div>
-            <!-- TradingView Widget END -->    
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500 Index"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "Bitcoin"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "Ethereum"
+      },
+      {
+        "description": "Pesos Argentinos / Dolar",
+        "proName": "FX_IDC:ARSUSD"
+      },
+      {
+        "description": "Solana",
+        "proName": "BINANCE:SOLUSDT"
+      },
+      {
+        "description": "BNB",
+        "proName": "BINANCE:BNBUSDT"
+      }
+    ],
+    "showSymbolLogo": true,
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "colorTheme": "light",
+    "locale": "es"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
         </div>
-        
     </section>
 
     <section id="Frases">
@@ -139,7 +129,7 @@
             <div class="grid_comentarios">
                 <div class="item1">“No compres cosas que no necesitas, con dinero que no tienes, para impresionar a gente que no te importa.” -Dave Ramsey</div>
                 <div class="item2">"“El mercado es como un péndulo que siempre oscila entre el optimismo insostenible (que hace que los activos sean demasiado caros) 
-                    y el pesimismo injustificado (que hace que los activos sean demasiado baratos. El inversor inteligente es una persona realista, que vende a optimistas 
+                    y el pesimismo injustificado que hace que los activos sean demasiado baratos. El inversor inteligente es una persona realista, que vende a optimistas 
                     y compra a pesimistas."- Benjamin Graham</div>
                 <div class="item3">“El riesgo viene de no saber lo que estás haciendo.” -Warren Buffett</div>
                 <div class="item4">El tiempo es tu activo más valioso."- Andrew Lokenauth</div>
@@ -149,30 +139,58 @@
         
     </section>
 
-    <section id="contacto">
-        <div class="form_container">
-            <h2>Contacto</h2>
-            <form action="https://formspree.io/f/movqzkbn"
-            method="POST">
-                <label for="nombre">Nombre</label><br>
-                <input placeholder="Ingrese su nombre" type="text" id="nombre"><br>
-                <label for="mail">Email</label><br>
-                <input placeholder="Ingrese su email" type="email" name="mail" id="mail"><br>
-                <label for="mensaje">Mensaje</label><br>
-                <textarea placeholder="Ingrese su mensaje" rows="7" name="mensaje" id="mensaje"></textarea>
-                <div>
-                    <button>
-                        Enviar
-                    </button>
-                </div>
-            </form>
-        </div>
-        
-    </section>
+    <section id="contacto" class="d-flex justify-content-center align-items-start">
+      <!-- Contenedor principal centrado -->
+      <div class="contact-map-container">
+          <div class="form_container">
+              <h2>Contacto</h2>
+              <form action="https://formspree.io/f/movqzkbn" method="POST">
+                  <label for="nombre">Nombre</label><br>
+                  <input placeholder="Ingrese su nombre" type="text" id="nombre"><br>
+                  <label for="mail">Email</label><br>
+                  <input placeholder="Ingrese su email" type="email" name="mail" id="mail"><br>
+                  <label for="mensaje">Mensaje</label><br>
+                  <textarea placeholder="Ingrese su mensaje" rows="7" name="mensaje" id="mensaje"></textarea>
+                  <div>
+                      <button class="form-button">Enviar</button>
+                  </div>
+              </form>
+          </div>
+  
+          <div class="map_container">
+              <h2>Ubicación</h2>
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0169751871254!2d-58.37328732424053!3d-34.60373225749895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33532a8705b45%3A0xaf4ac850ee945d64!2sBolsa%20de%20Comercio%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1735512866790!5m2!1ses-419!2sar" 
+                  width="100%" 
+                  height="300" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+          </div>
+      </div>
+  </section>
+  
 </main>
 
 <footer>
-    Proyecto creado por Mauro Dominguez
+  <p>Proyecto creado por Mauro Dominguez</p>
+  <div class="social-links">
+      <a href="https://facebook.com" target="_blank">
+          <img src="imagenes/facebook.jpg" alt="Facebook" width="30">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+          <img src="imagenes/twitter.jpg" alt="Twitter" width="30">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+          <img src="imagenes/instagram.jpg" alt="Instagram" width="30">
+      </a>
+      <a href="https://linkedin.com" target="_blank">
+          <img src="imagenes/linkedin.jpg" alt="LinkedIn" width="30">
+      </a>
+  </div>
 </footer>
+
 </body>
 </html>
